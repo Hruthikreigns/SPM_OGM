@@ -1,0 +1,272 @@
+/* General Styles */
+body {
+  margin: 0;
+  font-family: Georgia, serif;
+  background-color: #4B0F18;  /* Deep Maroon */
+  color: white;
+}
+
+a {
+  color: #D4AF37;  /* Gold links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header */
+header {
+  background-color: #D4AF37;  /* Gold header */
+  color: #4B0F18;             /* Maroon text */
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+  height: auto;
+  border: 2px solid red;
+}
+
+.logo h1 {
+  font-size: 22px;
+  margin-left: 10px;
+  display: inline;
+  color: #4B0F18;
+}
+
+/* Navigation Menu */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  color: #4B0F18;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #4B0F18; /* Deep Maroon */
+  color: white;              /* White on hover */
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(#4B0F18, #330c12);
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+}
+
+/* Quick Links Section */
+.quick-links {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+}
+
+.card {
+  background: #D4AF37;  /* Gold card background */
+  color: #4B0F18;       /* Maroon text */
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  text-align: center;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 10px;
+  background: #4B0F18;  /* Deep maroon button */
+  color: white;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+
+.card a:hover {
+  background: #330c12;
+}
+
+/* Footer */
+footer {
+  background: #D4AF37;
+  color: #4B0F18;
+  text-align: center;
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* Members Page Grid */
+.members-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.member-card {
+  background: #D4AF37;
+  color: #4B0F18;
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.member-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Contact Section */
+.contact-section {
+  background: #D4AF37;
+  color: #4B0F18;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 80%;
+  text-align: center;
+}
+
+/* History Year Sections */
+.year-section {
+  background: #D4AF37;
+  color: #4B0F18;
+  margin: 20px auto;
+  padding: 15px;
+  border-radius: 10px;
+  width: 80%;
+}
+
+.year-section h3 {
+  margin-top: 0;
+}
+
+.year-section a {
+  color: #4B0F18;
+  text-decoration: underline;
+}
+
+/* Responsive: Tablet and below */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  .hero h2 {
+    font-size: 22px;
+  }
+
+  .hero p {
+    font-size: 16px;
+  }
+
+  .quick-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .members-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .member-card {
+    width: 90%;
+  }
+
+  .contact-section,
+  .year-section {
+    width: 90%;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 12px;
+  }
+}
+
+/* Responsive: Mobile phones */
+@media (max-width: 480px) {
+  .hero h2 {
+    font-size: 20px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+  .logo h1 {
+    font-size: 18px;
+  }
+
+  nav a {
+    font-size: 14px;
+  }
+
+  .card,
+  .member-card,
+  .year-section,
+  .contact-section {
+    width: 95%;
+  }
+}
